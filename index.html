@@ -1,126 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Web Portfolio Of Haroun Khenfri</title>
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page">
       <div class="dOne">
-        <header>
-          <h1>My Portfolio</h1>
+        <!-- Header -->
+        <header class="main-header" id="home">
+          <div class="header-content">
+            <h1 class="site-title">My Portfolio</h1>
+            <nav class="main-nav">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </header>
 
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <section id="about">
-          <h2>About Me</h2>
-          <p class="pOne">
-            "Hi, my name is Haroun <br />I'm a <span>Designer</span>,
-            <span>Front-End Developer</span> <br />I design and code beautiful
-            simple things, and I love what I do."
-          </p>
+        <!-- About Me Section -->
+        <section class="about-me" id="about">
+          <div class="about-card">
+            <img src="images/profile.jpg" alt="Haroun's photo" class="profile-img" />
+            <div class="about-text">
+              <h2>Hello, I’m Haroun</h2>
+              <p>
+                I’m a <span class="tag">Designer</span> and 
+                <span class="tag">Front-End Developer</span> with a passion 
+                for crafting sleek, user-friendly experiences. I love turning ideas 
+                into digital solutions that blend aesthetics with functionality.
+              </p>
+              <a href="#contact" class="btn-contact">Get in Touch</a>
+            </div>
+          </div>
         </section>
 
+        <!-- Projects Section -->
         <section class="projects" id="projects">
           <h2>Projects</h2>
-          <ul>
-            <li>
-              <a
-                href="https://valais-hiking-explorer.netlify.app/"
-                target="_blank"
-                >Valais-hiking-explorer</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://haroun-khenfri-project-one.netlify.app/ "
-                target="_blank"
-                >My Project One</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://haroun-khenfri-project-two.netlify.app/"
-                target="_blank"
-                >My Project Two</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://haroun-khenfri-project-three.netlify.app/"
-                target="_blank"
-                >My Project Three</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://haroun-khenfri-project-four.netlify.app/"
-                target="_blank"
-                >My Project Four</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/Haroun1007" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <a
-                href="https://codepen.io/Haroun-Khenfri/pens/public "
-                target="_blank"
-                ><i
-                  class="fa fa-fw w3-xxxlarge w3-margin-right fa-code"
-                  style="margin-right: 20px"
-                  k
-                ></i
-                >CodePen</a
-              >
-            </li>
-          </ul>
+          <div class="projects-container">
+            <!-- Sea Battle, A Team-Built Game -->
+            <div class="project-card">
+              <i class="fa fa-anchor project-icon" aria-hidden="true"></i>
+              <h3>Sea Battle, A Team-Built Game</h3>
+              <p>
+                Sea Battle is a modern twist on the classic Battleship board game, developed 
+                by me and my team at Powercoders bootcamp. Built with HTML, CSS, and JavaScript, it 
+                features interactive ship placement, real-time game logic, and a dynamic UI.
+              </p>
+              <a href="https://harounkdev.github.io/sea-battle/" target="_blank">View Live Demo</a>
+            </div>
+            <!-- Valais Hiking Explorer -->
+            <div class="project-card">
+              <i class="fa fa-tree project-icon" aria-hidden="true"></i>
+              <h3>Valais Hiking Explorer</h3>
+              <p>
+                A local hiking platform for the Valais region featuring interactive filters 
+                (difficulty, distance) and a downloadable map. Built with HTML, CSS, and JavaScript.
+              </p>
+              <a href="https://valais-hiking-explorer.netlify.app/" target="_blank">View Live Demo</a>
+            </div>
+            <!-- CreativeFocus, A Modern Design Agency -->
+            <div class="project-card">
+              <i class="fa fa-paint-brush project-icon" aria-hidden="true"></i>
+              <h3>CreativeFocus, A Modern Design Agency</h3>
+              <p>
+                A single-page concept for a modern design agency highlighting services such as 
+                Graphic Design, Web Design, and UI/UX. Features a sleek hero section, service cards, 
+                and a portfolio gallery. Built with HTML and CSS.
+              </p>
+              <a href="https://haroun-khenfri-project-one.netlify.app/" target="_blank">View Live Demo</a>
+            </div>
+            <!-- Elzero World, A Personal & Community Hub -->
+            <div class="project-card">
+              <i class="fa fa-globe project-icon" aria-hidden="true"></i>
+              <h3>Elzero World, A Personal & Community Hub</h3>
+              <p>
+                A versatile website template designed to share personal interests, showcase skills, 
+                and build an engaging online community. Includes sections for Articles, Gallery, Team, 
+                and Testimonials. Built with HTML and CSS.
+              </p>
+              <a href="https://haroun-khenfri-project-three.netlify.app/" target="_blank">View Live Demo</a>
+            </div>
+            <!-- Elzero Dashboard, A Modern Admin Panel -->
+            <div class="project-card">
+              <i class="fa fa-tachometer project-icon" aria-hidden="true"></i>
+              <h3>Elzero Dashboard, A Modern Admin Panel</h3>
+              <p>
+                A clean, user-friendly admin template featuring a sidebar for navigation, color-coded 
+                statuses, dynamic tables, and analytic widgets. Perfect for project or team management. 
+                Built with HTML and CSS.
+              </p>
+              <a href="https://haroun-khenfri-project-four.netlify.app/" target="_blank">View Live Demo</a>
+            </div>
+            <!-- GitHub Repositories -->
+            <div class="project-card">
+              <i class="fa fa-github project-icon" aria-hidden="true"></i>
+              <h3>GitHub Repositories</h3>
+              <p>
+                Explore more of my projects, code snippets, and open-source contributions.
+              </p>
+              <a href="https://github.com/harounkDev" target="_blank">View GitHub</a>
+            </div>
+            <!-- CodePen Experiments -->
+            <div class="project-card">
+              <i class="fa fa-codepen project-icon" aria-hidden="true"></i>
+              <h3>CodePen Experiments</h3>
+              <p>
+                Check out my front-end experiments, mini projects, and design prototypes on CodePen.
+              </p>
+              <a href="https://codepen.io/Haroun-Khenfri/pens/public" target="_blank">View CodePen</a>
+            </div>
+          </div>
         </section>
 
-        <section id="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
           <h2>Get in Touch</h2>
-
-          <p>
-            <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
-            Ruelle de la Calattra 4,3972 Miege
-          </p>
-          <p>
-            <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>
-            <a href="tel:+41796690426">+41796690426</a>
-          </p>
-          <p>
-            <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
-            <a href="mailto:haroun.khenfri@yahoo.com"
-              >haroun.khenfri@yahoo.com</a
-            >
-          </p>
+          <div class="contact-card">
+            <ul class="contact-list">
+              <li>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                Ruelle de la Calattra 4, 3972 Miege
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="tel:+41796690426">+41796690426</a>
+              </li>
+              <li>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:haroun.khenfri@yahoo.com">haroun.khenfri@yahoo.com</a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
 
-      <footer>
-        <p style="color: wheat; padding: 10px; background-color: #55555573">
-          &copy; 2024 My Portfolio. All rights reserved for Haroun Khenfri.
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p>
+          Made with 
+          <span class="heart">&hearts;</span> 
+          in Switzerland 
+          &copy; 2024 by Haroun Khenfri. 
+          All rights reserved.
         </p>
       </footer>
+      
     </div>
   </body>
 </html>
