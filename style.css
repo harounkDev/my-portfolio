@@ -1,326 +1,325 @@
 /* Global Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: system-ui;
-  }
-  html {
-    scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding: 0;
-    background-image: url("./images/BackGroudMyPortolio.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
-  
-  /* Page Container */
-  .page {
-    position: relative;
-  }
-  .dOne {
-    position: relative;
-    background-image: url("./images/BackGroudMyPortolio.jpg");
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    background-size: 100% 100%;
-    color: white;
-    z-index: 1;
-  }
-  .dOne::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: radial-gradient(circle at 50% 44%, transparent, #000c 49%);
-    z-index: -1;
-  }
-  
-  /* HEADER + NAVBAR (Glass Style) */
-  .main-header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 10px 20px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui;
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  background-image: url("./images/BackGroudMyPortolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* Page Container */
+.page {
+  position: relative;
+}
+.dOne {
+  position: relative;
+  background-image: url("./images/BackGroudMyPortolio.jpg");
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-size: 100% 100%;
+  color: white;
+  z-index: 1;
+}
+.dOne::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 50% 44%, transparent, #000c 49%);
+  z-index: -1;
+}
+
+/* HEADER + NAVBAR (Glass Style) */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 20px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.site-title {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+.main-nav a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+.main-nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
   .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .site-title {
-    color: #fff;
-    font-size: 1.8rem;
-    margin: 0;
+    margin-bottom: 10px;
   }
   .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  .main-nav a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s, text-decoration 0.3s;
-  }
-  .main-nav a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-  @media (max-width: 768px) {
-    .header-content {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .site-title {
-      margin-bottom: 10px;
-    }
-    .main-nav ul {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
-  
-  /* ABOUT ME SECTION (Glass Card) */
-  .about-me {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 40px 0;
-    position: relative;
-    z-index: 2;
   }
+}
+
+/* ABOUT ME SECTION (Glass Card) */
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px 30px;
+  max-width: 800px;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.about-text {
+  color: #fff;
+}
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 2px 6px;
+  font-weight: bold;
+  color: #fff;
+}
+.btn-contact {
+  display: inline-block;
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-contact:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+@media (max-width: 767px) {
   .about-card {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px 30px;
-    max-width: 800px;
+    flex-direction: column;
+    text-align: center;
   }
   .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  .about-text {
-    color: #fff;
-  }
-  .about-text h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #ffd700;
-  }
-  .about-text p {
-    line-height: 1.6;
     margin-bottom: 15px;
   }
-  .tag {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 2px 6px;
-    font-weight: bold;
-    color: #fff;
+}
+@media (max-width: 767px) {
+  html {
+    padding: 120px; /* or 0, depending on your preference */
   }
-  .btn-contact {
-    display: inline-block;
-    color: #ffd700;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .btn-contact:hover {
-    background-color: #ffd700;
-    color: #333;
-  }
-  @media (max-width: 767px) {
-    .about-card {
-      flex-direction: column;
-      text-align: center;
-    }
-    .profile-img {
-      margin-bottom: 15px;
-    }
-  }
-  @media (max-width: 767px) {
-    html {
-      padding: 120px; /* or 0, depending on your preference */
-    }
-  }
-  
-  /* PROJECTS SECTION (Glass + FA Icons) */
-  .projects {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .projects h2 {
-    font-size: 2.5rem;
-    color: #fff;
-    margin-bottom: 30px;
-  }
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  .project-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
-    color: #fff;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  }
-  .project-icon {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    display: block;
-    color: #ffd700;
-  }
-  .project-card h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: #ffd700;
-    margin-bottom: 10px;
-  }
-  .project-card p {
-    margin-bottom: 1em;
-    line-height: 1.5;
-  }
-  .project-card a {
-    color: #ffd700;
-    font-weight: bold;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.15);
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  .project-card a:hover {
-    background-color: #ffd700;
-    color: #333;
-  }
-  
-  /* CONTACT SECTION (Glass Card) */
-  .contact-section {
-    text-align: center;
-    margin: 40px 0;
-    position: relative;
-    z-index: 2;
-  }
-  .contact-section h2 {
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  .contact-card {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px 30px;
-    color: #fff;
-    max-width: 600px;
-  }
-  .contact-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .contact-list li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
-  }
-  .contact-list i {
-    color: #ffd700;
-    font-size: 1.2rem;
-  }
-  .contact-list a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .contact-list a:hover {
-    text-decoration: underline;
-  }
-  
-  /************************************
+}
+
+/* PROJECTS SECTION (Glass + FA Icons) */
+.projects {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.projects h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+.project-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  display: block;
+  color: #ffd700;
+}
+.project-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+.project-card p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+.project-card a {
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.project-card a:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+/* CONTACT SECTION (Glass Card) */
+.contact-section {
+  text-align: center;
+  margin: 40px 0;
+  position: relative;
+  z-index: 2;
+}
+.contact-section h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.contact-card {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px 30px;
+  color: #fff;
+  max-width: 600px;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.contact-list i {
+  color: #ffd700;
+  font-size: 1.2rem;
+}
+.contact-list a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/************************************
   CREATIVE FOOTER (Pulsing Heart)
 ************************************/
 
 .site-footer {
-    text-align: center;
-    color: #fff; /* Footer text color */
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    position: relative;
-    z-index: 2; /* Make sure it's above background overlays */
+  text-align: center;
+  color: #fff; /* Footer text color */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+  position: relative;
+  z-index: 2; /* Make sure it's above background overlays */
+}
+
+/* Heart pulsing animation */
+.heart {
+  color: #e25555; /* Heart color (red/pink) */
+  display: inline-block;
+  animation: pulse 1s infinite;
+  transform-origin: center;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-  
-  /* Heart pulsing animation */
-  .heart {
-    color: #e25555;          /* Heart color (red/pink) */
-    display: inline-block;
-    animation: pulse 1s infinite;
-    transform-origin: center;
+  50% {
+    transform: scale(1.3);
   }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.3);
-    }
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
   }
-  
-  /* Responsive Global */
-  @media (max-width: 767px) {
-    html {
-      padding: 0;
-    }
+}
+
+/* Responsive Global */
+@media (max-width: 767px) {
+  html {
+    padding: 0;
   }
-  
+}
